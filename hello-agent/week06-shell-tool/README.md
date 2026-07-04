@@ -3,36 +3,39 @@
 ## TODO
 - subprocess.run()
 
-支持：
+增加：
 ```
-读取
-
-写入
-
-复制
-
-删除
-
-搜索
+Run Shell
 ```
-案例：
+例如：
 ```
-帮我统计Python文件数量
+pip install flask
 ```
 Agent：
 ```
-ListDir
+RunShell
 
 ↓
 
-Read
+返回stdout
 
 ↓
 
-统计
-
-↓
-
-回答
+继续思考
 ```
-已经开始像Claude Code。
+案例：
+```
+创建虚拟环境
+```
+Agent：
+```
+python -m venv
+
+↓
+
+activate
+
+↓
+
+pip install
+```
